@@ -2931,7 +2931,6 @@ put_mqtt_bridge(http_msg *msg, const char *name)
 		conf_bridge_node_destroy(node);
 		conf_bridge_node_parse(node, &bridge->sqlite, node_obj);
 		node->parallel   = parallel;
-		bridge->nodes[i] = node;
 		found = true;
 		//TODO @Wangha add logic to restart bridge client
 		//TODO parameters: config, node, node->sock
